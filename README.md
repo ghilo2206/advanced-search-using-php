@@ -9,3 +9,8 @@ The form input is received and a mysql query with advanced search conditions is 
 The user can specify the database columns the he wishes to search for and a search will be applied to that column 
 else the search is executed on all coulumns.
  
+<img src="https://github.com/ghilo2206/advanced-search-using-php/blob/main/image1.1.png" width="250">
+
+<img src="https://github.com/ghilo2206/advanced-search-using-php/blob/main/image1.2.png" width="250">
+
+<img src="https://github.com/ghilo2206/advanced-search-using-php/blob/main/image1.3.png" width="250">
