@@ -136,13 +136,19 @@
     border: 1px solid #00838f;
 
 
-}</style>
+}
+ .box{
+    padding: 20px;
+    
+ }
+
+</style>
                                 </head>
                                 <body className='snippet-body'>
                                 <div class="container mt-5">
 
         <div class="row d-flex justify-content-center">
-<form name="frmSearch" method="post" action="form.php">
+<form name="frmSearch" method="post" action="index.php">
             <div class="col-md-10">
 
                 <div class="card p-3  py-4">
@@ -230,6 +236,20 @@
                 
             </div>
             </form>
+            <div class="container">
+                <div class="row">
+                    
+                    <?php while($row = mysqli_fetch_assoc($result)) { ?>
+            <div class="col-md-5">
+                <div class="box">
+                <div ><strong><?php echo $row["title"]; ?></strong></div>
+                <div class=" result-description"><?php echo $row["description"]; ?></div>
+                </div>
+            </div>
+            <?php } ?>
+                    
+                </div>
+            </div>
 
 
                         <?php while($row = mysqli_fetch_assoc($result)) { ?>
